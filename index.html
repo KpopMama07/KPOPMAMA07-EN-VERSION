@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover KPOP 🎵</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(135, 168, 254) 11.2%,
+          rgb(254, 165, 197) 100.2%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        color: black;
+        font-family: comic sans-serif;
+        font-size: 34px;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid purple;
+        padding: 20px;
+        font-size: 18px;
+        border-radius: 2px;
+        font-weight: bold;
+        font-family: comic sans-serif;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        border-radius: 15px;
+        margin: 0 auto;
+      }
+
+      p {
+        line-height: 2;
+        font-size: 15px;
+        margin: 20px 0 10px;
+        text-indent: 1em;
+        font-family: cursive;
+      }
+
+      button {
+        display: block;
+        margin: 40px auto;
+        background: pink;
+        color: black;
+        font-size: 18px;
+        padding: 25px 20px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 250ms ease-in-out;
+      }
+
+      button:hover {
+        background: black;
+        color: pink;
+        cursor: pointer;
+      }
+
+      .page {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 25px 50px;
+      }
+
+      .youtube {
+        color: pink;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke: 0.1px pink;
+        text-decoration: none;
+        font-size: 25px;
+      }
+
+      .youtube:hover {
+        text-decoration: underline;
+      }
+
+      .info {
+        text-align: center;
+        font-size: 14px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ea0aa74a16.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <h1>🎼 Welcome Aboard The Hallyu Wave 🎤</h1>
+      <h2>
+        Follow Me @KPOPMAMA07 for KPOP updates!
+        <br />
+        <br />
+
+        <a href="https://twitter.com/KPOPMAMA07" target="_blank">
+          <i class="fab fa-twitter"></i>Twitter
+        </a>
+        &nbsp;
+
+        <a href="https://www.instagram.com/kpopmama07/" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </h2>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/524/original/kpop.jpg?1630684039"
+        alt="KPOP"
+        width="300"
+      />
+
+      <p>
+        <strong>KPOP</strong> <em>(Korean: 케이팝; RR: keipap)</em>, short for
+        Korean popular music, is a genre of music originating in South Korea as
+        part of South Korean culture. It is influenced by styles and genres from
+        around the world, such as pop, experimental, rock, jazz, gospel, hip
+        hop, R&B, reggae, electronic dance, folk, country, and classical on top
+        of its traditional Korean music roots.
+      </p>
+      <p>
+        You may have heard of the current groups like BTS, TWICE and BlackPink.
+        But did you know that Kpop is said to have originated all the way back
+        in 1992?! Kpop sure has come a long way since then as in 2020, the genre
+        experienced a record-breaking year when it experienced a 44.8% growth
+        and positioned itself as the fastest-growing major market of the year.
+        Crazy right? Have I piqued your interest yet? Good! Let's dive in
+        together into the world of KPOP! 🌊
+      </p>
+      <hr />
+
+      <p>
+        ⬇ Want to know which group is my favorite so far this year? Click the
+        link below! ⬇
+      </p>
+      <br />
+      <span>
+        <a
+          href="https://www.youtube.com/channel/UCjwLvrVHevlUI05RGWJprXQ"
+          target="_blank"
+          class="youtube"
+        >
+          Check Out My YouTube Channel For The Latest KPOP Countdowns!
+        </a>
+        <i class="fab fa-youtube"></i>
+        <button class="kpop">Experience Kpop Today!</button>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KOpORoq8Jbo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <p class="info">
+          This page was built and coded by
+          <a
+            href="https://www.linkedin.com/in/jasmine-tsunoda89/"
+            target="_blank"
+          >
+            Jasmine Tsunoda
+          </a>
+          using HTML, CSS and JAVASCRIPT.
+        </p>
+      </span>
+    </div>
+    <script>
+      function kpop() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let group = prompt("Who is your favorite group?");
+        group = group.toLocaleLowerCase();
+
+        if (group === "exo") {
+          alert(
+            "Exo is the best right, " +
+              name +
+              "! Thank you! I'll be in touch via email soon! Meanwhile check out my YouTube videos! 🎵 "
+          );
+        } else {
+          alert(
+            "Great taste in music, " +
+              name +
+              "! I'll be in touch via email soon! Meanwhile check out my YouTube videos! 🎵  "
+          );
+        }
+      }
+
+      let kpopButton = document.querySelector("button");
+      kpopButton.addEventListener("click", kpop);
+    </script>
+  </body>
+</html>
